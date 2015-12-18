@@ -27,7 +27,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Add selectors to buttons
+    // Add selectors to the buttons.
+    // Touch down to play the note and touch up inside to stop the note.
     NSArray *buttonArray = @[self.button01,
                              self.button02,
                              self.button03,
@@ -36,8 +37,12 @@
                              self.button06,
                              self.button07];
     for (UIButton *button in buttonArray) {
-        [button addTarget:self action:@selector(playNote:) forControlEvents:UIControlEventTouchDown ];
-        [button addTarget:self action:@selector(stopNote:) forControlEvents:UIControlEventTouchUpInside];
+        [button addTarget:self
+                   action:@selector(playNote:)
+         forControlEvents:UIControlEventTouchDown ];
+        [button addTarget:self
+                   action:@selector(stopNote:)
+         forControlEvents:UIControlEventTouchUpInside];
     }
     
     // Create the sampler and load an instrument
@@ -110,15 +115,5 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
