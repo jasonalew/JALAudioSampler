@@ -9,23 +9,25 @@
 /* Begin PBXBuildFile section */
 		5504A0B41C2368FF00976A94 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5504A0B31C2368FF00976A94 /* main.m */; };
 		5504A0B71C2368FF00976A94 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5504A0B61C2368FF00976A94 /* AppDelegate.m */; };
-		5504A0BA1C2368FF00976A94 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5504A0B91C2368FF00976A94 /* ViewController.m */; };
 		5504A0BD1C2368FF00976A94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5504A0BB1C2368FF00976A94 /* Main.storyboard */; };
 		5504A0BF1C2368FF00976A94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5504A0BE1C2368FF00976A94 /* Assets.xcassets */; };
 		5504A0C21C2368FF00976A94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5504A0C01C2368FF00976A94 /* LaunchScreen.storyboard */; };
 		5504A0CD1C2368FF00976A94 /* JALAudioSamplerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5504A0CC1C2368FF00976A94 /* JALAudioSamplerTests.m */; };
-		5504A0D81C2368FF00976A94 /* JALAudioSamplerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5504A0D71C2368FF00976A94 /* JALAudioSamplerUITests.m */; };
+		5504A0E71C23697700976A94 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5504A0E51C23697700976A94 /* AudioToolbox.framework */; };
+		5504A0E81C23697700976A94 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5504A0E61C23697700976A94 /* AVFoundation.framework */; };
+		5504A0EE1C236CF400976A94 /* EXS Factory Samples in Resources */ = {isa = PBXBuildFile; fileRef = 5504A0ED1C236CF400976A94 /* EXS Factory Samples */; };
+		5504A0EF1C236CF400976A94 /* EXS Factory Samples in Resources */ = {isa = PBXBuildFile; fileRef = 5504A0ED1C236CF400976A94 /* EXS Factory Samples */; };
+		5504A0F21C236D5500976A94 /* JALSampler.m in Sources */ = {isa = PBXBuildFile; fileRef = 5504A0F11C236D5500976A94 /* JALSampler.m */; };
+		5504A0F51C2370B600976A94 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5504A0E51C23697700976A94 /* AudioToolbox.framework */; };
+		5504A0F61C2370B600976A94 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5504A0E61C23697700976A94 /* AVFoundation.framework */; };
+		5504A0F91C23715D00976A94 /* JALViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5504A0F81C23715D00976A94 /* JALViewController.m */; };
+		5504A0FC1C2373D500976A94 /* ontology-destroy-you-bass.exs in Resources */ = {isa = PBXBuildFile; fileRef = 5504A0FB1C2373D500976A94 /* ontology-destroy-you-bass.exs */; };
+		5504A0FD1C2373D500976A94 /* ontology-destroy-you-bass.exs in Resources */ = {isa = PBXBuildFile; fileRef = 5504A0FB1C2373D500976A94 /* ontology-destroy-you-bass.exs */; };
+		5504A0FF1C23777800976A94 /* ElPiano1.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = 5504A0FE1C23777800976A94 /* ElPiano1.sf2 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		5504A0C91C2368FF00976A94 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5504A0A71C2368FF00976A94 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5504A0AE1C2368FF00976A94;
-			remoteInfo = JALAudioSampler;
-		};
-		5504A0D41C2368FF00976A94 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5504A0A71C2368FF00976A94 /* Project object */;
 			proxyType = 1;
@@ -39,8 +41,6 @@
 		5504A0B31C2368FF00976A94 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5504A0B51C2368FF00976A94 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5504A0B61C2368FF00976A94 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		5504A0B81C2368FF00976A94 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		5504A0B91C2368FF00976A94 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		5504A0BC1C2368FF00976A94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5504A0BE1C2368FF00976A94 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5504A0C11C2368FF00976A94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -48,9 +48,16 @@
 		5504A0C81C2368FF00976A94 /* JALAudioSamplerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JALAudioSamplerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5504A0CC1C2368FF00976A94 /* JALAudioSamplerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JALAudioSamplerTests.m; sourceTree = "<group>"; };
 		5504A0CE1C2368FF00976A94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5504A0D31C2368FF00976A94 /* JALAudioSamplerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JALAudioSamplerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5504A0D71C2368FF00976A94 /* JALAudioSamplerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JALAudioSamplerUITests.m; sourceTree = "<group>"; };
-		5504A0D91C2368FF00976A94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5504A0E51C23697700976A94 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		5504A0E61C23697700976A94 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		5504A0ED1C236CF400976A94 /* EXS Factory Samples */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "EXS Factory Samples"; sourceTree = "<group>"; };
+		5504A0F01C236D5500976A94 /* JALSampler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JALSampler.h; sourceTree = "<group>"; };
+		5504A0F11C236D5500976A94 /* JALSampler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JALSampler.m; sourceTree = "<group>"; };
+		5504A0F41C236D9000976A94 /* JALLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JALLog.h; sourceTree = "<group>"; };
+		5504A0F71C23715D00976A94 /* JALViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JALViewController.h; sourceTree = "<group>"; };
+		5504A0F81C23715D00976A94 /* JALViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JALViewController.m; sourceTree = "<group>"; };
+		5504A0FB1C2373D500976A94 /* ontology-destroy-you-bass.exs */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ontology-destroy-you-bass.exs"; sourceTree = "<group>"; };
+		5504A0FE1C23777800976A94 /* ElPiano1.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = ElPiano1.sf2; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +65,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5504A0E71C23697700976A94 /* AudioToolbox.framework in Frameworks */,
+				5504A0E81C23697700976A94 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,13 +74,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5504A0D01C2368FF00976A94 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				5504A0F51C2370B600976A94 /* AudioToolbox.framework in Frameworks */,
+				5504A0F61C2370B600976A94 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,9 +85,10 @@
 		5504A0A61C2368FF00976A94 = {
 			isa = PBXGroup;
 			children = (
+				5504A0E51C23697700976A94 /* AudioToolbox.framework */,
+				5504A0E61C23697700976A94 /* AVFoundation.framework */,
 				5504A0B11C2368FF00976A94 /* JALAudioSampler */,
 				5504A0CB1C2368FF00976A94 /* JALAudioSamplerTests */,
-				5504A0D61C2368FF00976A94 /* JALAudioSamplerUITests */,
 				5504A0B01C2368FF00976A94 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -93,7 +98,6 @@
 			children = (
 				5504A0AF1C2368FF00976A94 /* JALAudioSampler.app */,
 				5504A0C81C2368FF00976A94 /* JALAudioSamplerTests.xctest */,
-				5504A0D31C2368FF00976A94 /* JALAudioSamplerUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -101,15 +105,21 @@
 		5504A0B11C2368FF00976A94 /* JALAudioSampler */ = {
 			isa = PBXGroup;
 			children = (
+				5504A0FE1C23777800976A94 /* ElPiano1.sf2 */,
+				5504A0FB1C2373D500976A94 /* ontology-destroy-you-bass.exs */,
+				5504A0ED1C236CF400976A94 /* EXS Factory Samples */,
 				5504A0B51C2368FF00976A94 /* AppDelegate.h */,
 				5504A0B61C2368FF00976A94 /* AppDelegate.m */,
-				5504A0B81C2368FF00976A94 /* ViewController.h */,
-				5504A0B91C2368FF00976A94 /* ViewController.m */,
 				5504A0BB1C2368FF00976A94 /* Main.storyboard */,
+				5504A0F71C23715D00976A94 /* JALViewController.h */,
+				5504A0F81C23715D00976A94 /* JALViewController.m */,
 				5504A0BE1C2368FF00976A94 /* Assets.xcassets */,
 				5504A0C01C2368FF00976A94 /* LaunchScreen.storyboard */,
 				5504A0C31C2368FF00976A94 /* Info.plist */,
+				5504A0F41C236D9000976A94 /* JALLog.h */,
 				5504A0B21C2368FF00976A94 /* Supporting Files */,
+				5504A0F01C236D5500976A94 /* JALSampler.h */,
+				5504A0F11C236D5500976A94 /* JALSampler.m */,
 			);
 			path = JALAudioSampler;
 			sourceTree = "<group>";
@@ -129,15 +139,6 @@
 				5504A0CE1C2368FF00976A94 /* Info.plist */,
 			);
 			path = JALAudioSamplerTests;
-			sourceTree = "<group>";
-		};
-		5504A0D61C2368FF00976A94 /* JALAudioSamplerUITests */ = {
-			isa = PBXGroup;
-			children = (
-				5504A0D71C2368FF00976A94 /* JALAudioSamplerUITests.m */,
-				5504A0D91C2368FF00976A94 /* Info.plist */,
-			);
-			path = JALAudioSamplerUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,41 +179,21 @@
 			productReference = 5504A0C81C2368FF00976A94 /* JALAudioSamplerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		5504A0D21C2368FF00976A94 /* JALAudioSamplerUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5504A0E21C2368FF00976A94 /* Build configuration list for PBXNativeTarget "JALAudioSamplerUITests" */;
-			buildPhases = (
-				5504A0CF1C2368FF00976A94 /* Sources */,
-				5504A0D01C2368FF00976A94 /* Frameworks */,
-				5504A0D11C2368FF00976A94 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5504A0D51C2368FF00976A94 /* PBXTargetDependency */,
-			);
-			name = JALAudioSamplerUITests;
-			productName = JALAudioSamplerUITests;
-			productReference = 5504A0D31C2368FF00976A94 /* JALAudioSamplerUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		5504A0A71C2368FF00976A94 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = JAL;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Jason Lew";
 				TargetAttributes = {
 					5504A0AE1C2368FF00976A94 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = Y36ZG49HW8;
 					};
 					5504A0C71C2368FF00976A94 = {
-						CreatedOnToolsVersion = 7.2;
-						TestTargetID = 5504A0AE1C2368FF00976A94;
-					};
-					5504A0D21C2368FF00976A94 = {
 						CreatedOnToolsVersion = 7.2;
 						TestTargetID = 5504A0AE1C2368FF00976A94;
 					};
@@ -233,7 +214,6 @@
 			targets = (
 				5504A0AE1C2368FF00976A94 /* JALAudioSampler */,
 				5504A0C71C2368FF00976A94 /* JALAudioSamplerTests */,
-				5504A0D21C2368FF00976A94 /* JALAudioSamplerUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -245,6 +225,9 @@
 			files = (
 				5504A0C21C2368FF00976A94 /* LaunchScreen.storyboard in Resources */,
 				5504A0BF1C2368FF00976A94 /* Assets.xcassets in Resources */,
+				5504A0FC1C2373D500976A94 /* ontology-destroy-you-bass.exs in Resources */,
+				5504A0EE1C236CF400976A94 /* EXS Factory Samples in Resources */,
+				5504A0FF1C23777800976A94 /* ElPiano1.sf2 in Resources */,
 				5504A0BD1C2368FF00976A94 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -253,13 +236,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5504A0D11C2368FF00976A94 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				5504A0EF1C236CF400976A94 /* EXS Factory Samples in Resources */,
+				5504A0FD1C2373D500976A94 /* ontology-destroy-you-bass.exs in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,8 +248,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5504A0BA1C2368FF00976A94 /* ViewController.m in Sources */,
+				5504A0F91C23715D00976A94 /* JALViewController.m in Sources */,
 				5504A0B71C2368FF00976A94 /* AppDelegate.m in Sources */,
+				5504A0F21C236D5500976A94 /* JALSampler.m in Sources */,
 				5504A0B41C2368FF00976A94 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,14 +263,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5504A0CF1C2368FF00976A94 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5504A0D81C2368FF00976A94 /* JALAudioSamplerUITests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -299,11 +270,6 @@
 			isa = PBXTargetDependency;
 			target = 5504A0AE1C2368FF00976A94 /* JALAudioSampler */;
 			targetProxy = 5504A0C91C2368FF00976A94 /* PBXContainerItemProxy */;
-		};
-		5504A0D51C2368FF00976A94 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5504A0AE1C2368FF00976A94 /* JALAudioSampler */;
-			targetProxy = 5504A0D41C2368FF00976A94 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -363,7 +329,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -400,7 +366,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -411,7 +377,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = JALAudioSampler/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.jlew.ios.JALAudioSampler;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -422,7 +390,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = JALAudioSampler/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.jlew.ios.JALAudioSampler;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -453,30 +423,6 @@
 			};
 			name = Release;
 		};
-		5504A0E31C2368FF00976A94 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = JALAudioSamplerUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = co.jlew.ios.JALAudioSamplerUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = JALAudioSampler;
-				USES_XCTRUNNER = YES;
-			};
-			name = Debug;
-		};
-		5504A0E41C2368FF00976A94 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = JALAudioSamplerUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = co.jlew.ios.JALAudioSamplerUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = JALAudioSampler;
-				USES_XCTRUNNER = YES;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -502,14 +448,6 @@
 			buildConfigurations = (
 				5504A0E01C2368FF00976A94 /* Debug */,
 				5504A0E11C2368FF00976A94 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		5504A0E21C2368FF00976A94 /* Build configuration list for PBXNativeTarget "JALAudioSamplerUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5504A0E31C2368FF00976A94 /* Debug */,
-				5504A0E41C2368FF00976A94 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

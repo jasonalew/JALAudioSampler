@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  JALViewController.h
 //  JALAudioSampler
 //
 //  Created by Jason Lew on 12/17/15.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface JALViewController : UIViewController
 
 @end
-
