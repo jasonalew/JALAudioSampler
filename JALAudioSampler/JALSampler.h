@@ -8,7 +8,6 @@
 
 #import <Foundation/Foundation.h>
 @import AVFoundation;
-#import <QuartzCore/QuartzCore.h>
 #import "JALLog.h"
 
 @interface JALSampler : NSObject
