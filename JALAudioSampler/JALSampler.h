@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 @import AVFoundation;
+@import AudioToolbox;
 #import "JALLog.h"
 
 @interface JALSampler : NSObject

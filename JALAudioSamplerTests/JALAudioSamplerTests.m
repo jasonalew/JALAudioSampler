@@ -8,6 +8,7 @@
 
 #import <XCTest/XCTest.h>
 @import AVFoundation;
+@import AudioToolbox;
 #import "JALSampler.h"
 
 @interface JALAudioSamplerTests : XCTestCase
