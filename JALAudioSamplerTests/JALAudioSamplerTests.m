@@ -10,6 +10,7 @@
 @import AVFoundation;
 @import AudioToolbox;
 #import "JALSampler.h"
+#import "JALMidiPlayer.h"
 
 @interface JALAudioSamplerTests : XCTestCase
 
@@ -31,12 +32,22 @@
     [super tearDown];
 }
 
+- (void)loadSoundFont {
+    [self.sampler loadSoundFont:@"ElPiano1" withPatch:0];
+}
+
 - (void)testLoadEXSInstrument {
     [self.sampler loadEXSInstrument:@"ontology-destroy-you-bass" withPatch:0];
 }
 
 - (void)testLoadSoundFont {
-    [self.sampler loadSoundFont:@"ElPiano1" withPatch:0];
+    [self loadSoundFont];
+}
+
+- (void)testLoadMidiSequence {
+    [self loadSoundFont];
+    JALMidiPlayer *midiPlayer = [[JALMidiPlayer alloc]init];
+    [midiPlayer loadMidiSequence:@"bach-invention-01" withAUGraph:self.sampler.processingGraph];
 }
 
 //- (void)testExample {
