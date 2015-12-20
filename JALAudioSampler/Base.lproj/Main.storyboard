@@ -81,15 +81,32 @@
                                 </constraints>
                                 <state key="normal" title="7"/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kah-tv-FIb">
+                                <rect key="frame" x="250" y="350" width="101" height="30"/>
+                                <state key="normal" title="Play Sequence"/>
+                                <connections>
+                                    <action selector="playSequence:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8QJ-55-pmy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aBX-jh-NYg">
+                                <rect key="frame" x="248" y="397" width="105" height="30"/>
+                                <state key="normal" title="Stop Sequence"/>
+                                <connections>
+                                    <action selector="stopSequence:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tcj-Qr-fZk"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="kah-tv-FIb" firstAttribute="top" secondItem="5wg-DO-Knc" secondAttribute="bottom" constant="28" id="0N5-6I-WqD"/>
                             <constraint firstItem="5wg-DO-Knc" firstAttribute="leading" secondItem="37D-rh-wpY" secondAttribute="trailing" constant="8" id="46F-we-gi6"/>
                             <constraint firstItem="d3b-e1-BRz" firstAttribute="leading" secondItem="93D-Jr-ups" secondAttribute="trailing" constant="8" id="60q-yJ-jQB"/>
                             <constraint firstItem="93D-Jr-ups" firstAttribute="leading" secondItem="qQB-cb-62J" secondAttribute="trailing" constant="8" id="8nq-jM-DDK"/>
                             <constraint firstItem="qQB-cb-62J" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="9HT-7k-hFW"/>
                             <constraint firstItem="93D-Jr-ups" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="EHU-LT-rdI"/>
                             <constraint firstItem="qQB-cb-62J" firstAttribute="width" secondItem="tLd-r3-Yr8" secondAttribute="width" id="KQS-aV-88v"/>
+                            <constraint firstItem="aBX-jh-NYg" firstAttribute="top" secondItem="kah-tv-FIb" secondAttribute="bottom" constant="17" id="LhQ-Yo-8IZ"/>
+                            <constraint firstItem="aBX-jh-NYg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Lr0-oX-oW3"/>
                             <constraint firstItem="Loc-JW-czH" firstAttribute="width" secondItem="tLd-r3-Yr8" secondAttribute="width" id="NcD-VG-ybe"/>
                             <constraint firstItem="93D-Jr-ups" firstAttribute="width" secondItem="tLd-r3-Yr8" secondAttribute="width" id="Ntu-kd-zle"/>
                             <constraint firstItem="qQB-cb-62J" firstAttribute="leading" secondItem="5wg-DO-Knc" secondAttribute="trailing" constant="8" id="SH2-rA-GDs"/>
@@ -106,6 +123,7 @@
                             <constraint firstItem="Loc-JW-czH" firstAttribute="leading" secondItem="tLd-r3-Yr8" secondAttribute="trailing" constant="8" id="kxP-n3-GKk"/>
                             <constraint firstItem="5wg-DO-Knc" firstAttribute="width" secondItem="tLd-r3-Yr8" secondAttribute="width" id="rwk-UH-4bP"/>
                             <constraint firstItem="tLd-r3-Yr8" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="wR5-ek-eZY"/>
+                            <constraint firstItem="kah-tv-FIb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ywb-9u-FlX"/>
                         </constraints>
                     </view>
                     <connections>
