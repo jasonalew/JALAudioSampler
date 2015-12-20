@@ -25,6 +25,7 @@
 		5504A0FD1C2373D500976A94 /* ontology-destroy-you-bass.exs in Resources */ = {isa = PBXBuildFile; fileRef = 5504A0FB1C2373D500976A94 /* ontology-destroy-you-bass.exs */; };
 		5504A0FF1C23777800976A94 /* ElPiano1.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = 5504A0FE1C23777800976A94 /* ElPiano1.sf2 */; };
 		55F752441C2669D6009F0F95 /* JALMidiPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F752431C2669D6009F0F95 /* JALMidiPlayer.m */; };
+		55F752461C2684A5009F0F95 /* bach-invention-01.mid in Resources */ = {isa = PBXBuildFile; fileRef = 55F752451C2684A5009F0F95 /* bach-invention-01.mid */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		5504A0FE1C23777800976A94 /* ElPiano1.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = ElPiano1.sf2; sourceTree = "<group>"; };
 		55F752421C2669D6009F0F95 /* JALMidiPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JALMidiPlayer.h; sourceTree = "<group>"; };
 		55F752431C2669D6009F0F95 /* JALMidiPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JALMidiPlayer.m; sourceTree = "<group>"; };
+		55F752451C2684A5009F0F95 /* bach-invention-01.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = "bach-invention-01.mid"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 		5504A0B11C2368FF00976A94 /* JALAudioSampler */ = {
 			isa = PBXGroup;
 			children = (
+				55F752451C2684A5009F0F95 /* bach-invention-01.mid */,
 				5504A0FE1C23777800976A94 /* ElPiano1.sf2 */,
 				5504A0FB1C2373D500976A94 /* ontology-destroy-you-bass.exs */,
 				5504A0ED1C236CF400976A94 /* EXS Factory Samples */,
@@ -234,6 +237,7 @@
 				5504A0EE1C236CF400976A94 /* EXS Factory Samples in Resources */,
 				5504A0FF1C23777800976A94 /* ElPiano1.sf2 in Resources */,
 				5504A0BD1C2368FF00976A94 /* Main.storyboard in Resources */,
+				55F752461C2684A5009F0F95 /* bach-invention-01.mid in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
