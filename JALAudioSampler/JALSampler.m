@@ -19,7 +19,6 @@ const double preferredSampleRate = 44100.0;
 @interface JALSampler()
 
 @property (nonatomic) double    graphSampleRate;
-@property (nonatomic) AUGraph   processingGraph;
 
 @property (nonatomic) AudioUnit ioUnit;
 @property (nonatomic, strong) AVAudioSession *sessionInstance;
