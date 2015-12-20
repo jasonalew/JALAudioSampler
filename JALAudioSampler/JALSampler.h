@@ -14,6 +14,7 @@
 @interface JALSampler : NSObject
 
 @property (nonatomic) AudioUnit samplerUnit;
+@property (nonatomic) AUGraph   processingGraph;
 
 - (OSStatus)loadAUPreset:(NSString *)presetName;
 - (BOOL)loadEXSInstrument:(NSString *)exsInstrumentName withPatch:(int)presetNumber;
