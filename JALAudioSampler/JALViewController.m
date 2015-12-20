@@ -8,6 +8,7 @@
 
 #import "JALViewController.h"
 #import "JALSampler.h"
+#import "JALMidiPlayer.h"
 
 @interface JALViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *button01;
@@ -19,6 +20,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *button07;
 
 @property (strong, nonatomic) JALSampler *sampler;
+@property (strong, nonatomic) JALMidiPlayer *midiPlayer;
 
 @end
 
@@ -48,6 +50,10 @@
     // Create the sampler and load an instrument
     self.sampler = [[JALSampler alloc]init];
     [self.sampler loadEXSInstrument:@"ontology-destroy-you-bass" withPatch:0];
+    
+    // Create the midi player and load a sequence
+    self.midiPlayer = [[JALMidiPlayer alloc]init];
+    [self.midiPlayer loadMidiSequence:@"bach-invention-01" withAUGraph:self.sampler.processingGraph];
 }
 
 - (void)playNote:(UIButton *)button
@@ -109,6 +115,14 @@
         default:
             break;
     }
+}
+
+- (IBAction)playSequence:(id)sender {
+    [self.midiPlayer playMidiSequence];
+}
+
+- (IBAction)stopSequence:(id)sender {
+    [self.midiPlayer stopMidiSequence];
 }
 
 - (void)didReceiveMemoryWarning {
