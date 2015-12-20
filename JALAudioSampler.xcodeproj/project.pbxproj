@@ -24,6 +24,7 @@
 		5504A0FC1C2373D500976A94 /* ontology-destroy-you-bass.exs in Resources */ = {isa = PBXBuildFile; fileRef = 5504A0FB1C2373D500976A94 /* ontology-destroy-you-bass.exs */; };
 		5504A0FD1C2373D500976A94 /* ontology-destroy-you-bass.exs in Resources */ = {isa = PBXBuildFile; fileRef = 5504A0FB1C2373D500976A94 /* ontology-destroy-you-bass.exs */; };
 		5504A0FF1C23777800976A94 /* ElPiano1.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = 5504A0FE1C23777800976A94 /* ElPiano1.sf2 */; };
+		55F752441C2669D6009F0F95 /* JALMidiPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F752431C2669D6009F0F95 /* JALMidiPlayer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,8 @@
 		5504A0F81C23715D00976A94 /* JALViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JALViewController.m; sourceTree = "<group>"; };
 		5504A0FB1C2373D500976A94 /* ontology-destroy-you-bass.exs */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ontology-destroy-you-bass.exs"; sourceTree = "<group>"; };
 		5504A0FE1C23777800976A94 /* ElPiano1.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = ElPiano1.sf2; sourceTree = "<group>"; };
+		55F752421C2669D6009F0F95 /* JALMidiPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JALMidiPlayer.h; sourceTree = "<group>"; };
+		55F752431C2669D6009F0F95 /* JALMidiPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JALMidiPlayer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +123,8 @@
 				5504A0B21C2368FF00976A94 /* Supporting Files */,
 				5504A0F01C236D5500976A94 /* JALSampler.h */,
 				5504A0F11C236D5500976A94 /* JALSampler.m */,
+				55F752421C2669D6009F0F95 /* JALMidiPlayer.h */,
+				55F752431C2669D6009F0F95 /* JALMidiPlayer.m */,
 			);
 			path = JALAudioSampler;
 			sourceTree = "<group>";
@@ -252,6 +257,7 @@
 				5504A0B71C2368FF00976A94 /* AppDelegate.m in Sources */,
 				5504A0F21C236D5500976A94 /* JALSampler.m in Sources */,
 				5504A0B41C2368FF00976A94 /* main.m in Sources */,
+				55F752441C2669D6009F0F95 /* JALMidiPlayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,6 +448,7 @@
 				5504A0DE1C2368FF00976A94 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5504A0DF1C2368FF00976A94 /* Build configuration list for PBXNativeTarget "JALAudioSamplerTests" */ = {
 			isa = XCConfigurationList;
@@ -450,6 +457,7 @@
 				5504A0E11C2368FF00976A94 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
