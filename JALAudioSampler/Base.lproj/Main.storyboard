@@ -95,6 +95,15 @@
                                     <action selector="stopSequence:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tcj-Qr-fZk"/>
                                 </connections>
                             </button>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="120" minValue="30" maxValue="300" translatesAutoresizingMaskIntoConstraints="NO" id="nAB-HE-tay">
+                                <rect key="frame" x="163" y="435" width="274" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="270" id="LLw-87-RYh"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="tempoSliderValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="5eh-j4-PKR"/>
+                                </connections>
+                            </slider>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -102,6 +111,7 @@
                             <constraint firstItem="5wg-DO-Knc" firstAttribute="leading" secondItem="37D-rh-wpY" secondAttribute="trailing" constant="8" id="46F-we-gi6"/>
                             <constraint firstItem="d3b-e1-BRz" firstAttribute="leading" secondItem="93D-Jr-ups" secondAttribute="trailing" constant="8" id="60q-yJ-jQB"/>
                             <constraint firstItem="93D-Jr-ups" firstAttribute="leading" secondItem="qQB-cb-62J" secondAttribute="trailing" constant="8" id="8nq-jM-DDK"/>
+                            <constraint firstItem="nAB-HE-tay" firstAttribute="top" secondItem="aBX-jh-NYg" secondAttribute="bottom" constant="8" id="8xp-jJ-weu"/>
                             <constraint firstItem="qQB-cb-62J" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="9HT-7k-hFW"/>
                             <constraint firstItem="93D-Jr-ups" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="EHU-LT-rdI"/>
                             <constraint firstItem="qQB-cb-62J" firstAttribute="width" secondItem="tLd-r3-Yr8" secondAttribute="width" id="KQS-aV-88v"/>
@@ -114,6 +124,7 @@
                             <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="d3b-e1-BRz" secondAttribute="trailing" id="X1j-4h-ZJb"/>
                             <constraint firstItem="37D-rh-wpY" firstAttribute="leading" secondItem="Loc-JW-czH" secondAttribute="trailing" constant="8" id="YwS-wE-YEO"/>
                             <constraint firstItem="37D-rh-wpY" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="aaV-7a-zt0"/>
+                            <constraint firstItem="nAB-HE-tay" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cdD-Sc-j1R"/>
                             <constraint firstItem="5wg-DO-Knc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="crt-FX-5KZ"/>
                             <constraint firstItem="5wg-DO-Knc" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="e1f-7j-4D0"/>
                             <constraint firstItem="Loc-JW-czH" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="eNr-wp-t6h"/>
@@ -134,10 +145,12 @@
                         <outlet property="button05" destination="qQB-cb-62J" id="K6K-9s-N3z"/>
                         <outlet property="button06" destination="93D-Jr-ups" id="efI-5e-0Kz"/>
                         <outlet property="button07" destination="d3b-e1-BRz" id="Mud-B5-zbt"/>
+                        <outlet property="tempoSlider" destination="nAB-HE-tay" id="wvN-Hd-Gzz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="580" y="378"/>
         </scene>
     </scenes>
 </document>
