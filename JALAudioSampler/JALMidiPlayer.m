@@ -12,7 +12,6 @@
 @interface JALMidiPlayer()
 
 @property (nonatomic) MusicPlayer musicPlayer;
-@property (nonatomic) MusicSequence musicSequence;
 
 @end
 
@@ -74,7 +73,56 @@
 
 - (OSStatus)stopMidiSequence
 {
-    return MusicPlayerStop(self.musicPlayer);
+    OSStatus result                 = noErr;
+    MusicTimeStamp startingTimeStamp    = 0;
+    
+    result = MusicPlayerStop(self.musicPlayer);
+    
+    // Reset the sequence to the beginning
+    MusicPlayerSetTime(self.musicPlayer, startingTimeStamp);
+    return result;
+}
+
+- (OSStatus)setTempo:(Float64)tempo forSequence:(MusicSequence)sequence
+{
+    MusicTrack tempoTrack;
+    // Get the tempo track and remove the events
+    MusicSequenceGetTempoTrack(sequence, &tempoTrack);
+    [self removeTempoEvents:tempoTrack];
+    // Set the new tempo
+    return MusicTrackNewExtendedTempoEvent(tempoTrack, 0, tempo);
+}
+
+- (void)removeTempoEvents:(MusicTrack) tempoTrack
+{
+    // Create a new iterator
+    MusicEventIterator iterator;
+    NewMusicEventIterator(tempoTrack, &iterator);
+    
+    Boolean hasNext;
+    MusicTimeStamp timeStamp    = 0;
+    MusicEventType eventType    = 0;
+    const void *eventData       = NULL;
+    UInt32 eventDataSize        = 0;
+    
+    // Check if there is an event and loop
+    MusicEventIteratorHasCurrentEvent(iterator, &hasNext);
+    while (hasNext) {
+        MusicEventIteratorGetEventInfo(iterator,
+                                       &timeStamp,
+                                       &eventType,
+                                       &eventData,
+                                       &eventDataSize);
+        // Delete the tempo event
+        if (eventType == kMusicEventType_ExtendedTempo) {
+            MusicEventIteratorDeleteEvent(iterator);
+        } else {
+            MusicEventIteratorNextEvent(iterator);
+        }
+        MusicEventIteratorHasCurrentEvent(iterator, &hasNext);
+        
+    }
+    DisposeMusicEventIterator(iterator);
 }
 
 @end
