@@ -18,6 +18,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *button05;
 @property (weak, nonatomic) IBOutlet UIButton *button06;
 @property (weak, nonatomic) IBOutlet UIButton *button07;
+@property (weak, nonatomic) IBOutlet UISlider *tempoSlider;
 
 @property (strong, nonatomic) JALSampler *sampler;
 @property (strong, nonatomic) JALMidiPlayer *midiPlayer;
@@ -123,6 +124,11 @@
 
 - (IBAction)stopSequence:(id)sender {
     [self.midiPlayer stopMidiSequence];
+}
+- (IBAction)tempoSliderValueChanged:(UISlider *)sender {
+    // Current slider range is 30-300 and defaults to 120
+    [self.midiPlayer setTempo:[sender value]
+                  forSequence:self.midiPlayer.musicSequence];
 }
 
 - (void)didReceiveMemoryWarning {
